@@ -117,12 +117,13 @@ def update_dashboard(selected_categories, selected_cities):
             "Citrico": "rgb( 244, 208, 63 )",
             "Balanced": "green"
         },
+        size_max=1000,
         zoom=initial_zoom,
         height=700,
         title="Map of Mexico",
         center=dict(lat=initial_lat, lon=initial_lon) # Set the initial center
     )
-
+    fig.update_traces(marker=dict(size=10)) # Try a value like 20
     # Customize the map style
     fig.update_layout(
         mapbox_style="open-street-map",
