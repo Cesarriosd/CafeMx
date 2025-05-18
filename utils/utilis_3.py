@@ -109,7 +109,7 @@ def update_dashboard(selected_categories, selected_cities):
         filtered_df,
         lat="Latitude",
         lon="Longitude",
-        hover_name="Variedad",
+        hover_name="Finca",
         hover_data=["Variedad", "Perfil"],
         color="Perfil",  # Color points by the Category column
         color_discrete_map={
